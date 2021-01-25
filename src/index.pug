@@ -6,39 +6,22 @@ html(lang="ru")
 		title Document
 		link(rel="stylesheet", href="css/index.min.css")
 	body
-		|
-		|
-		include main/pug/modulis/header/_header.pug
-		|
-		|
-		|
-		include main/pug/modulis/content/_findFood.pug
-		|
-		|
-		|
-		include main/pug/modulis/content/_foodSearch.pug
-		|
-		|
-		|
-		include main/pug/modulis/content/_uber.pug
-		|
-		|
-		|
-		include main/pug/modulis/content/_restaurant.pug
-		|
-		|
-		|
-		include main/pug/modulis/content/_App.pug
-		|
-		|
-		|
-		include main/pug/modulis/content/_Services.pug
-		|
-		|
-		|
-		include main/pug/modulis/footer/_footer.pug
-		|
-		|
-		|
-		include main/pug/modulis/_js.pug
+<!--header-->
+		include main/pug/components/_header.pug
+<!--content-->	
+		include main/pug/components/_findFood.pug
+
+		include main/pug/components/_foodSearch.pug
+	
+		include main/pug/components/_uber.pug
+		
+		include main/pug/components/_restaurant.pug
+		
+		include main/pug/components/_App.pug
+	
+		include main/pug/components/_Services.pug
+<!--footer-->
+		include main/pug/components/_footer.pug
+<!--js-->	
+		include main/pug/components/_js.pug
 

@@ -215,13 +215,6 @@ body {
 
 /*-Content-*/
 
-.images {
-  height: 100px;
-  width: 100px;
-  background: url("../assets/images/1/1.jpg") no-repeat center / cover;
-  border: 1px solid #000;
-}
-
 /*---------*/
 
 /*-Footer-*/
@@ -230,5 +223,5 @@ body {
 
 /*-block-*/
 @supports (-webkit-appearance:none){
-.images{background:url("../assets/images/1/1.webp") no-repeat center / cover}
+
 }
