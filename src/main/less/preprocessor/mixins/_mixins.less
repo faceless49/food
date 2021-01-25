@@ -5,21 +5,15 @@
 	height: round(@h,1);
 }
 
-.pos-r(@value-1, @value-2) {
-		position: relative;
-		top: @value-1;
-		left: @value-2;
-}
-
-.pos-a(@value-1, @value-2) {
-	position: absolute;
-	top: @value-1;
-	letf: @value-2;
-}
-
-.flex-jus-ali(@value,@value){
+.flex-j-a(@value,@value){
 	justify-content: @value;
 	align-items:@value;
 }
 
+.padding(@1,@2,@3,@4,@main-value){
+padding:round(@1/@main-value*1em,1) 
+round(@2/@main-value*1em,1) 
+round(@3/@main-value*1em,1) 
+round(@4/@main-value*1em,1) ;
+}
 

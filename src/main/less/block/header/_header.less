@@ -1,27 +1,57 @@
 // main:../_block.less
 
-
 .header {
-
+	min-height:880px;
+	&:extend(.pos-rel);
 }
 .header--bg {
+	background:url("@{way-img}/header/Sliced-Onion-PNG-Image.png") no-repeat 500px 111350px/220px,
+	url("@{way-img}/header/background.png") no-repeat 0px 0px/cover
+	;
 }
 
 .conteiner {
+	max-width: 1620px;
+	padding: 0 20px;
+	margin: 0 auto;
 
 }
 
 .header__description {
+	padding-top: 250px;
+	max-width: 440px;
+	@media screen and(max-width:768px) {
+		max-width:1920px;
+		text-align: center;
+	}
 }
 
 .title {
+	.font(50px,70px);
+}
+
+.title-span{
+	color: @span-color;
 }
 
 .text {
+	.font(21px,70px,"KayakSans",rgba(0, 0, 0, 0.8))
+}
+.header__text{
+	margin:27px 0 20px 0;
 }
 
 .bth {
+	.font(25px,27px,"KayakSans",@main-color);
+	.padding(21.5px,37px,21px,37px,25px);
+	background-color:@span-color;
+	border-radius: 10px/25px*1em;
 }
 
 .header__bth {
+	position:absolute;
+	top:25px;
+	right:25px;
+	.font(19px);
+	.padding(14px,31px,11px,27px,19px);
 }

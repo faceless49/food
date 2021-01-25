@@ -482,3 +482,7 @@
 	font-size: unit(@font-size/10, rem);
 	text-align: @text-align;
 }
+
+.font(@font-size,) when(isnumber(@font-size)) {
+	font-size: unit(@font-size/10, rem);
+}
